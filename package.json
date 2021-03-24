@@ -1,0 +1,25 @@
+{
+  "name": "yg-axios-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "sh deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysu-gjx/yg-axios-doc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ysu-gjx/yg-axios-doc/issues"
+  },
+  "homepage": "https://github.com/ysu-gjx/yg-axios-doc#readme",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
