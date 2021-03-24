@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:ysu-gjx/yg-axios.git master:gh-pages
+git push -f git@github.com:ysu-gjx/yg-axios-doc.git master:gh-pages
 
 cd -
