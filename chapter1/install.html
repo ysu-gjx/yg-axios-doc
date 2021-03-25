@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装 TypeScript | 使用 TypeScript 从零实现 axios</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="学习使用 TypeScript 从零实现 axios 库">
+    
+    <link rel="preload" href="/yg-axios-doc/assets/css/0.styles.a7fda1e8.css" as="style"><link rel="preload" href="/yg-axios-doc/assets/js/app.7891d6bf.js" as="script"><link rel="preload" href="/yg-axios-doc/assets/js/2.2bbbb304.js" as="script"><link rel="preload" href="/yg-axios-doc/assets/js/9.b544ca40.js" as="script"><link rel="prefetch" href="/yg-axios-doc/assets/js/10.967f3d9a.js"><link rel="prefetch" href="/yg-axios-doc/assets/js/11.b3fc08f6.js"><link rel="prefetch" href="/yg-axios-doc/assets/js/3.2c99a915.js"><link rel="prefetch" href="/yg-axios-doc/assets/js/4.e05c873c.js"><link rel="prefetch" href="/yg-axios-doc/assets/js/5.f3e6ed41.js"><link rel="prefetch" href="/yg-axios-doc/assets/js/6.498ab014.js"><link rel="prefetch" href="/yg-axios-doc/assets/js/7.3f5168c2.js"><link rel="prefetch" href="/yg-axios-doc/assets/js/8.3163b1a2.js">
+    <link rel="stylesheet" href="/yg-axios-doc/assets/css/0.styles.a7fda1e8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/yg-axios-doc/" class="home-link router-link-active"><!----> <span class="site-name">使用 TypeScript 从零实现 axios</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>初识 TypeScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/yg-axios-doc/chapter1/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/yg-axios-doc/chapter1/install.html" aria-current="page" class="active sidebar-link">安装 TypeScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/yg-axios-doc/chapter1/install.html#插曲" class="sidebar-link">插曲</a></li></ul></li><li><a href="/yg-axios-doc/chapter1/start.html" class="sidebar-link">编写第一个 TypeScript 程序</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安装-typescript"><a href="#安装-typescript" class="header-anchor">#</a> 安装 TypeScript</h1> <p>命令行运行如下命令，全局安装 TypeScript：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -g typescript
+</code></pre></div><p>安装完成后，在控制台运行如下命令，检查安装是否成功(3.x)：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>tsc -V 
+</code></pre></div><h2 id="插曲"><a href="#插曲" class="header-anchor">#</a> 插曲</h2> <p>在录制本视频的时候，TypeScript 的版本是 3.3.3333，很多同学看到这个版本号一定很好奇，我也一样，于是我去搜了一下，发现这个是 TypeScript 团队有意为之，详情可以参考这个 <a href="https://github.com/Microsoft/TypeScript/issues/30032" target="_blank" rel="noopener noreferrer">issue<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/yg-axios-doc/chapter1/" class="prev router-link-active">
+        Introduction
+      </a></span> <span class="next"><a href="/yg-axios-doc/chapter1/start.html">
+        编写第一个 TypeScript 程序
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/yg-axios-doc/assets/js/app.7891d6bf.js" defer></script><script src="/yg-axios-doc/assets/js/2.2bbbb304.js" defer></script><script src="/yg-axios-doc/assets/js/9.b544ca40.js" defer></script>
+  </body>
+</html>
