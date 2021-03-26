@@ -12,9 +12,7 @@ module.exports = {
         title: '初识 TypeScript',
         collapsable: false,
         children: [
-          ['chapter1/', 'Introduction'],
-          'chapter1/install',
-          'chapter1/start'
+          ['foo/', 'Introduction']
         ]
       }
     ]
